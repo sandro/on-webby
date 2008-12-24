@@ -1,0 +1,57 @@
+---
+title:       Sandro Turriate - can't stop the rot
+created_at:  2008-08-02 14:06:40.000000 -06:00
+filter:
+  - haml
+---
+#about.span-24.descriptor
+  %h3
+    About
+    %small filler text mostly
+  #posts.span-18
+    .post.span-18
+      .span-5
+        %h4 Reclaiming root
+      .span-11.prepend-1
+        %p
+          I've been underutilizing my 
+          %a{:href => "http://slicehost.com"} slice
+          so I thought I'd use webby as a temporary solution while I get my slice in order.
+          I need to upgrade to the latest version of Ubuntu and install the standard mod rails stack.
+          When I get through with that I can finally start hosting some of my web experiments
+          and over time create a rails blog that I'm happy with.
+          Until then, enjoy the speed of static content.
+    .post.span-18
+      .span-5
+        %h4
+          You have accounts...
+          %br
+          I have them too
+      .span-11.prepend-1
+        %ul
+          %li
+            %a{:href => "http://github.com/sandro"} Github
+          %li
+            %a{:href => "http://twitter.com/sandrot"} Twitter
+          %li
+            %a{:href => "http://flickr.com/photos/untorn"} Flickr
+          %li
+            %a{:href => "http://delicious.com/sandrot"} Delicious
+          %li
+            %a{:href => "http://www.facebook.com/profile.php?id=25113331"} Facebook
+    .post.span-18
+      .span-5
+        %h4 
+          %em /me has a job
+      .span-11.prepend-1
+        %p
+          I work for 
+          %a{:href => "http://hashrocket.com"} Hashrocket
+          in Jacksonville beach; We're superfly coders.
+  #photo.span-5.last
+    %img{:src => "/images/vinyl_crusader.jpg", :alt => "Sandro wearing a cape"}
+    %p
+      %small
+        photo taken by
+        %a{:href => "http://www.flickr.com/photos/5daygirlfriend/"} 5daygirlfriend
+

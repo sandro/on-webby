@@ -1,0 +1,153 @@
+!default = #222333
+!link = #046380
+!link_hover = #D1570D
+
+!light_black = #111517
+!wine = #611427
+!light_brown = #958976
+!light_blue = #9CBFD1
+!silver_brown = #6A6A61
+
+!neue_family = "'Helvetica Neue', Helvetica, Arial, sans-serif"
+
+!bottom_push = 3em
+!left_padding = 6px
+
+//---------- GLOBAL ----------------
+body
+  :color = !default
+  margin-top: 0px
+  font-family: Helvetica, Arial, sans-serif
+  font-size: 88%
+a 
+  font-size: 1.1em
+  text-decoration: none
+  :color = !link
+  &:hover
+    :color = !link_hover
+h4
+  margin-bottom: 1.6em
+
+
+//---------- HEADER ----------------
+#header
+  margin-bottom: 4em
+  h1
+    :font-family = !neue_family
+    font-weight: bold
+    font-size: 40px
+    a, a:hover
+      color: #1D2326
+      outline: none
+    text-transform: uppercase
+    small
+      :color = !wine
+      font-weight: normal
+      display: block
+      text-transform: lowercase
+      text-align: right
+      margin-top: -11px
+  ul
+    list-style-type: none
+    margin: 0
+    li
+      float: left
+      a
+        :font-family = !neue_family
+        display: block
+        padding-top: 34px
+        padding-left: 4px
+        color: white
+        font-size: 18px
+    li.blog
+      background = !light_black
+      margin-right: 10px
+      a:hover
+        background = !light_black + #202020
+    li.links
+      background = !wine
+      margin-right: 10px
+      a:hover
+        background = !wine + #202020
+    li.work
+      background = !light_brown
+      margin-right: 10px
+      a:hover
+        background = !light_brown + #202020
+    li.about
+      background = !light_blue
+      a:hover
+        background = !light_blue + #202020
+
+
+//---------- CONTENT ----------------
+#content
+  form
+    label
+      display: block
+    input
+      margin-bottom: 9px
+    .label_for_error_field
+      padding-left: 22px
+      background: url("/images/asterisk_orange.png") top left no-repeat
+
+#latest_entry
+  :margin-bottom = !bottom_push
+  #post_summary
+    h2
+      :color = !light_brown
+      font-weight: bold
+    p
+      font-size: 17px
+
+.descriptor
+  h3
+    :color = white
+    :background-color = !wine
+    font-weight: normal
+    padding: 12px 0 0 6px
+    small
+      color: #DAF1FF
+      font-weight: normal
+      font-size: 14px
+      letter-spacing: 1px
+
+#interested
+  :margin-bottom = !bottom_push
+  .link
+    h4
+      font-size: 14px
+      font-weight: bold
+
+#passionate
+  :margin-bottom = !bottom_push
+  .post
+    h4
+      font-size: 18px
+      text-align: right
+
+#errorExplanation
+  background: #e9a591
+  border: 3px solid #9d6f61
+  padding: 9px 18px
+  margin: 18px 0
+  h2
+    font-size: 1.75em
+  p
+    font-size: 1.1em
+
+
+//---------- FOOTER ----------------
+#footer
+  :background = !light_brown
+  color: white
+  p
+    padding-left: 6px
+    margin-bottom: 12px
+  ul
+    margin: 0
+    padding: 0
+    list-style-type: none
+    li
+      display: inline
+      margin-right: 6px

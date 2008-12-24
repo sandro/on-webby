@@ -1,0 +1,52 @@
+---
+extension: html
+filter:    haml
+---
+!!! Strict
+%html{ "xml:lang" => "en", :lang => "en", :xmlns => "http://www.w3.org/1999/xhtml" }
+  %head
+    %meta{ :content => "text/html;charset=UTF-8", "http-equiv" => "content-type" }
+    %meta{ :name => "author", :content => @page.author }
+    %meta{ :content => "Ruby on Rails web developer that can't stop coding", :name => "description" }
+
+    %title= @page.title
+    %link{:rel => "stylesheet", :href => "/css/blueprint/screen.css", :type => "text/css", :media => "screen, projection"}
+    %link{:rel => "stylesheet", :href => "/css/blueprint/print.css", :type => "text/css", :media => "print"}
+    / [if IE]
+      %link{:rel => "stylesheet", :href => "/css/blueprint/ie.css", :type => "text/css", :media => "screen, projection"}
+
+    %link{:rel => "stylesheet", :href => "/css/coderay.css", :type => "text/css"}
+    %link{:rel => "stylesheet", :href => "/css/application.css", :type => "text/css", :media => "screen, projection"}
+  %body
+    .container
+      #header.span-24
+        %div.span-11
+          %h1 
+            %a{:href => "/"}
+              Sandro Turriate
+              %small can't stop the rot
+        %div.span-12.prepend-1.last
+          %ul
+            %li.blog.span-3
+              %a{:href => "#"} intentionally
+            %li.links.span-3
+              %a{:href => "#"} left
+            %li.work.span-3
+              %a{:href => "#"} blank
+            %li.about.span-3.last
+              %a{:href => "#about"} about
+      #content.span-24
+        = @content
+      #footer.span-24
+        %p
+          This website was created with 
+          %a{:href => "http://webby.rubyforge.org"} Webby
+  <script src="http://www.google-analytics.com/urchin.js" type="text/javascript">
+  </script>
+  <script type="text/javascript">
+  _uacct = "UA-147954-7";
+  urchinTracker();
+  </script>
+
+
+

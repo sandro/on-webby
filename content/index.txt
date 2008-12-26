@@ -25,9 +25,9 @@ filter:
     .post.span-18
       .span-5
         %h4
-          You have accounts...
+          You has accounts...
           %br
-          I have them too
+          I has them too
       .span-11.prepend-1
         %ul
           %li
@@ -48,7 +48,7 @@ filter:
         %p
           I work for 
           %a{:href => "http://hashrocket.com"} Hashrocket
-          in Jacksonville beach; We're superfly coders.
+          in Jacksonville beach; we're superfly coders.
   #photo.span-5.last
     %img{:src => "/images/vinyl_crusader.jpg", :alt => "Sandro wearing a cape"}
     %p

@@ -7,7 +7,7 @@ filter:    haml
   %head
     %meta{ :content => "text/html;charset=UTF-8", "http-equiv" => "content-type" }
     %meta{ :name => "author", :content => @page.author }
-    %meta{ :content => "Ruby on Rails web developer that can't stop coding", :name => "description" }
+    %meta{ :content => "Unstoppable Ruby on Rails web developer", :name => "description" }
 
     %title= @page.title
     %link{:rel => "stylesheet", :href => "/css/blueprint/screen.css", :type => "text/css", :media => "screen, projection"}

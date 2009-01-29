@@ -22,7 +22,7 @@ h4 {
     font-size: 40px;
     text-transform: uppercase; }
     #header h1 a, #header h1 a:hover {
-      color: #1D2326;
+      color: #1d2326;
       outline: none; }
     #header h1 small {
       color: #611427;
@@ -71,43 +71,51 @@ h4 {
   padding-left: 22px;
   background: url("/images/asterisk_orange.png") top left no-repeat; }
 
-#latest_entry {
-  margin-bottom: 3em; }
-  #latest_entry #post_summary h2 {
-    color: #958976;
-    font-weight: bold; }
-  #latest_entry #post_summary p {
-    font-size: 17px; }
+h2 {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  color: #1d2326;
+  font-weight: bold;
+  font-size: 2.2em; }
 
-.descriptor h3 {
-  color: #ffffff;
-  background-color: #611427;
-  font-weight: normal;
-  padding: 12px 0 0 6px; }
-  .descriptor h3 small {
-    padding-left: 4px;
-    color: #DAF1FF;
+#latest_post {
+  margin-bottom: 1em; }
+
+.descriptor {
+  margin-bottom: 3em; }
+  .descriptor h3 {
+    color: #ffffff;
+    background-color: #611427;
     font-weight: normal;
-    font-size: 14px;
-    letter-spacing: 1px; }
-.descriptor ul {
-  list-style: none;
-  margin: 0;
-  padding: 0; }
+    padding: 12px 0 0 6px; }
+    .descriptor h3 small {
+      padding-left: 4px;
+      color: #DAF1FF;
+      font-weight: normal;
+      font-size: 14px;
+      letter-spacing: 1px; }
+  .descriptor ul {
+    list-style: none;
+    margin: 0;
+    padding: 0; }
 
-#places {
-  margin-bottom: 3em; }
-  #places .link h4 {
-    font-size: 14px;
-    font-weight: bold; }
+#places .link h4 {
+  font-size: 14px;
+  font-weight: bold; }
 
-#about {
+.post {
+  margin-bottom: 1em; }
+  .post h4 {
+    font-size: 18px;
+    text-align: right; }
+
+#post {
   margin-bottom: 3em; }
-  #about .post {
-    margin-bottom: 1em; }
-    #about .post h4 {
-      font-size: 18px;
-      text-align: right; }
+  #post h2 {
+    margin-bottom: 0.2em; }
+
+p.summary {
+  font-size: 18px;
+  color: #444; }
 
 #errorExplanation {
   background: #e9a591;

@@ -9,7 +9,7 @@ filter:    haml
     %meta{ :name => "author", :content => @page.author }
     %meta{ :content => "Unstoppable Ruby on Rails web developer", :name => "description" }
 
-    %title= @page.title
+    %title== #{@page.title} - sandro turriate
     %link{:rel => "stylesheet", :href => "/css/blueprint/screen.css", :type => "text/css", :media => "screen, projection"}
     %link{:rel => "stylesheet", :href => "/css/blueprint/print.css", :type => "text/css", :media => "print"}
     / [if IE]
@@ -47,6 +47,4 @@ filter:    haml
   _uacct = "UA-147954-7";
   urchinTracker();
   </script>
-
-
 

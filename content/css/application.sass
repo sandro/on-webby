@@ -7,7 +7,8 @@ layout:    nil   # no layout
 !link = #046380
 !link_hover = #D1570D
 
-!light_black = #111517
+!light_black = #1D2326
+!almost_black = #111517
 !wine = #611427
 !light_brown = #958976
 !light_blue = #9CBFD1
@@ -42,7 +43,7 @@ h4
     font-weight: bold
     font-size: 40px
     a, a:hover
-      color: #1D2326
+      :color = !light_black
       outline: none
     text-transform: uppercase
     small
@@ -65,10 +66,10 @@ h4
         color: white
         font-size: 18px
     li.blog
-      background = !light_black
+      background = !almost_black
       margin-right: 10px
       a:hover
-        background = !light_black + #202020
+        background = !almost_black + #202020
     li.links
       background = !wine
       margin-right: 10px
@@ -96,16 +97,17 @@ h4
       padding-left: 22px
       background: url("/images/asterisk_orange.png") top left no-repeat
 
-#latest_entry
-  :margin-bottom = !bottom_push
-  #post_summary
-    h2
-      :color = !light_brown
-      font-weight: bold
-    p
-      font-size: 17px
+h2
+  :font-family = !neue_family
+  :color = !light_black
+  font-weight: bold
+  font-size: 2.2em
+
+#latest_post
+  :margin-bottom = 1em
 
 .descriptor
+  :margin-bottom = !bottom_push
   h3
     :color = white
     :background-color = !wine
@@ -123,20 +125,27 @@ h4
     padding: 0
 
 #places
-  :margin-bottom = !bottom_push
   .link
     h4
       font-size: 14px
       font-weight: bold
 
-#about
-  :margin-bottom = !bottom_push
-  .post
-    margin-bottom: 1em
-    h4
-      font-size: 18px
-      text-align: right
+.post
+  margin-bottom: 1em
+  h4
+    font-size: 18px
+    text-align: right
 
+#post
+  :margin-bottom = !bottom_push
+  h2
+    margin-bottom: 0.2em
+
+p.summary
+  font-size: 18px
+  color: #444
+
+//---------- RAILS ----------------
 #errorExplanation
   background: #e9a591
   border: 3px solid #9d6f61

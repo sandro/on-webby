@@ -27,10 +27,12 @@ filter:
     %li
       %a{:href => "http://turriate.com/media/githubber/"} Githubber
     %li
+      %a{:href => "http://flxhr.flensed.com/"} flXHR for secure cross-site scripting
+    %li
       %a{:href => "http://gist.github.com/54387"} Load jQuery from google with callback after jQuery loads
     %li
       %a{:href => "http://gist.github.com/42119"} 1 line function to download jQuery from google
   %p
-    %a{:href => "#"} Download my presentation
+    %a{:href => "/media/bookmarklets-not-chiclets.pdf"} Download my presentation
 .span-9.last
   %img{:src => @page.img_path}

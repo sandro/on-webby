@@ -14,24 +14,24 @@ filter: erb
     <description><%= ::Meta::DESCRIPTION %></description>
     <language>en-us</language>
     <lastBuildDate><%= Time.now.to_rss %></lastBuildDate>
+
+    <%
+        pages = @pages.find(:all,
+          :in_directory => 'blog',
+          :recursive => true,
+          :sort_by => :mtime,
+          :reverse => true
+        )
+
+        pages.each do |page|
+    %>
+
+    <item>
+      <title><%= page.title %></title>
+      <link><%= ::Meta.url(page.url) %></link>
+      <description><%= h render(page) %></description>
+      <pubDate><%= page.created_at.to_rss %></pubDate>
+    </item>
+    <% end %>
   </channel>
-
-  <%
-      pages = @pages.find(:all,
-        :in_directory => 'blog',
-        :recursive => true,
-        :sort_by => :mtime,
-        :reverse => true
-      )
-
-      pages.each do |page|
-  %>
-
-  <item>
-    <title><%= page.title %></title>
-    <link><%= ::Meta.url(page.url) %></link>
-    <description><%= h render(page) %></description>
-    <pubDate><%= page.created_at.to_rss %></pubDate>
-  </item>
-  <% end %>
 </rss>

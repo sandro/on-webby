@@ -5,7 +5,7 @@
     <link>http://turriate.com</link>
     <description>The ill skills of Sandro Turriate, jammin' Ruby, Rails, and jQuery.</description>
     <language>en-us</language>
-    <lastBuildDate>Mon, 16 Mar 2009 00:35:14 EDT</lastBuildDate>
+    <lastBuildDate>Mon, 16 Mar 2009 01:04:28 EDT</lastBuildDate>
   </channel>
 
   
@@ -49,11 +49,15 @@
     &lt;/li&gt;
   &lt;/ul&gt;
   &lt;p&gt;
-    &lt;a href='/media/bookmarklets-not-chiclets.pdf'&gt;Download my presentation&lt;/a&gt;
+    And here's the video of the talk:
+    &lt;object width=&quot;500&quot; height=&quot;281&quot;&gt;&lt;param name=&quot;allowfullscreen&quot; value=&quot;true&quot; /&gt;&lt;param name=&quot;allowscriptaccess&quot; value=&quot;always&quot; /&gt;&lt;param name=&quot;movie&quot; value=&quot;http://vimeo.com/moogaloop.swf?clip_id=3459673&amp;amp;server=vimeo.com&amp;amp;show_title=1&amp;amp;show_byline=1&amp;amp;show_portrait=0&amp;amp;color=00ADEF&amp;amp;fullscreen=1&quot; /&gt;&lt;embed src=&quot;http://vimeo.com/moogaloop.swf?clip_id=3459673&amp;amp;server=vimeo.com&amp;amp;show_title=1&amp;amp;show_byline=1&amp;amp;show_portrait=0&amp;amp;color=00ADEF&amp;amp;fullscreen=1&quot; type=&quot;application/x-shockwave-flash&quot; allowfullscreen=&quot;true&quot; allowscriptaccess=&quot;always&quot; width=&quot;500&quot; height=&quot;281&quot;&gt;&lt;/embed&gt;&lt;/object&gt;
   &lt;/p&gt;
 &lt;/div&gt;
 &lt;div class='span-9 last'&gt;
   &lt;img src='/images/2009/jan/bookmarklets-not-chiclets.jpg' /&gt;
+  &lt;p&gt;
+    &lt;a href='/media/bookmarklets-not-chiclets.pdf'&gt;Download my presentation&lt;/a&gt;
+  &lt;/p&gt;
 &lt;/div&gt;
 </description>
     <pubDate>Wed, 28 Jan 2009 21:40:40 EST</pubDate>

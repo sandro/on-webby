@@ -1,7 +1,10 @@
-
 task :default => :build
 
+SITE.host = 'yort'
+SITE.rsync_args = ['-r', '-c', '--delete', '--rsh=ssh']
+SITE.remote_dir = "~/www/turriate/public"
+
 desc 'deploy the site to the webserver'
-task :deploy => [:build, 'deploy:rsync']
+task :deploy => [:clobber, :build, 'deploy:rsync']
 
 # EOF

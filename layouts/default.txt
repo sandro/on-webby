@@ -6,8 +6,8 @@ filter:    haml
 %html{ "xml:lang" => "en", :lang => "en", :xmlns => "http://www.w3.org/1999/xhtml" }
   %head
     %meta{ :content => "text/html;charset=UTF-8", "http-equiv" => "content-type" }
-    %meta{ :name => "author", :content => @page.author }
-    %meta{ :content => "Unstoppable Ruby on Rails web developer", :name => "description" }
+    %meta{ :name => "author", :content => ::Meta::AUTHOR }
+    %meta{ :content => ::Meta::DESCRIPTION, :name => "description" }
 
     %title== #{@page.title} - Sandro Turriate
     %link{:rel => "stylesheet", :href => "/css/blueprint/screen.css", :type => "text/css", :media => "screen, projection"}
@@ -17,6 +17,8 @@ filter:    haml
 
     %link{:rel => "stylesheet", :href => "/css/coderay.css", :type => "text/css"}
     %link{:rel => "stylesheet", :href => "/css/application.css", :type => "text/css", :media => "screen, projection"}
+    %link{:rel => 'alternate', :type => 'application/rss+xml', :title => "RSS", :href => "/feed/rss.xml"}
+
   %body
     .container
       #header.span-24

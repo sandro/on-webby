@@ -1,5 +1,5 @@
 ---
-title:      Bookmarklets not Chiclets
+title: Bookmarklets not Chiclets
 summary: Chatting about bookmarklets with Refresh Jacksonville - Pecha Kucha Style.
 img_path: "/images/2009/jan/bookmarklets-not-chiclets.jpg"
 created_at: 2009-01-28 21:40:40.522351 -05:00
@@ -13,7 +13,7 @@ filter:
     I like javascript and I like hacking; sometimes I like to hack other people's work and I do so with bookmarklets.
     Bookmarklets allow you to make modifications to websites via javascript.
     Bookmarklets encourage the same philosophy as
-    %a{:href => "http://http://www.greasespot.net"} greasemonkey
+    %a{:href => "http://www.greasespot.net"} greasemonkey
     except you and your users don't need to install greasemonkey to modify web sites, bookmarklets are natively supported by the browser.
   %p
     I like Bookmarklets so much that I gave a talk about them at

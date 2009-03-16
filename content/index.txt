@@ -1,12 +1,11 @@
 ---
-author: Sandro Turriate
 title:       can't stop the rot
 created_at:  2008-08-02 14:06:40.000000 -06:00
 filter:
   - haml
 ---
 
-- recent_pages = @pages.find(:all, :in_directory => @page.dir, :recursive => true, :sort_by => "created_at", :reverse => true){|p| p.path !~ /\/index\.txt$/}
+- recent_pages = @pages.find(:all, :in_directory => 'blog', :recursive => true, :sort_by => "created_at", :reverse => true){|p| p.path !~ /\/index\.txt$/}
 - page = recent_pages.shift # remove first page for special treatment
 
 #latest_post.span-24
